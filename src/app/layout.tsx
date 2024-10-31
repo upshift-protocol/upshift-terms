@@ -2,17 +2,22 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import { dinCondensed } from "@/config/fonts";
 
+const title = "Upshift Finance";
+const description = "Earn yields from real institutional loans via the Upshift protocol. Democratizing high-yield investments traditionally limited to financial institutions.";
+const rootUrl = "https://terms.upshift.finance";
+
 export const metadata: Metadata = {
-  title: "Restricted | Upshift",
-  description: "Earn yields from real institutional loans via the Upshift protocol. Democratizing high-yield investments traditionally limited to financial institutions.",
+  title: `Restricted | ${title}`,
+  metadataBase: new URL(rootUrl),
+  description: description,
   openGraph: {
     type: "website",
-    url: "https://terms.upshift.finance",
-    title: "Upshift Finance",
-    description: "Earn yields from real institutional loans via the Upshift protocol. Democratizing high-yield investments traditionally limited to financial institutions.",
-    siteName: "Upshift Finance",
+    url: rootUrl,
+    title: title,
+    description: description,
+    siteName: title,
     images: [{
-      url: "https://terms.upshift.finance/og-image.jpg",
+      url: `${rootUrl}/og-image.jpg`,
     }],
   }
 };
