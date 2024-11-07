@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
-import { dinCondensed } from "@/config/fonts";
+import FONTS from "@/config/fonts";
 
 const title = "Upshift Finance";
 const description = "Earn yields from real institutional loans via the Upshift protocol. Democratizing high-yield investments traditionally limited to financial institutions.";
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dinCondensed.variable} antialiased`}
+        className={`${FONTS.visiaPro.variable} antialiased`}
       >
         {children}
       </body>

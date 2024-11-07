@@ -1,4 +1,5 @@
 import Logo from "@/components/logo";
+import FONTS from "@/config/fonts";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center">
         <Logo width={180} height={90} />
         <div className="max-w-md text-center">
-          <p>
+          <p style={FONTS.visiaPro.style}>
           Sorry, but the UpShift Web Application is not available in your country. We apologize for the inconvenience and thank you for your understanding.
           </p>
         </div>
