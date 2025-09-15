@@ -9,7 +9,9 @@ export default function Home() {
         <Logo width={180} height={90} />
         <div className="max-w-md text-center">
           <p style={FONTS.visiaPro.style}>
-          Sorry, but the UpShift Web Application is not available in your country. We apologize for the inconvenience and thank you for your understanding.
+          You are accessing Upshift products and services from a restricted jurisdiction. We do not allow access from certain jurisdictions including locations subject to sanctions restrictions and other jurisdictions where our services are ineligible for use. 
+          <br/><br/>
+          For more information, see our Terms of Use. If you think this is an error, try refreshing the page.
           </p>
         </div>
       </main>
@@ -22,10 +24,10 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="https://nextjs.org/icons/window.svg"
+            src="/apple-touch-icon.png"
             alt="Window icon"
-            width={16}
-            height={16}
+            width={24}
+            height={24}
           />
           Home
         </a>
@@ -37,10 +39,10 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="https://nextjs.org/icons/file.svg"
+            src="/folder-150.png"
             alt="File icon"
-            width={16}
-            height={16}
+            width={24}
+            height={24}
           />
           <p>Docs</p>
         </a>
